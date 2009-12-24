@@ -40,3 +40,5 @@ ORGWEBPAGE/Changes.txt
 .aspell.org.prepl
 
 js2-mode/build
+nxhtml/etc/schema/xhtml-loader.rnc
+
