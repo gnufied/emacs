@@ -39,23 +39,4 @@ ORGWEBPAGE/Changes.txt
 .aspell.org.pws
 .aspell.org.prepl
 
-# allow tmp and test directories that will not be tracked
-
-test
-auto
-tmp
-TODO
-
-# and collateral damage from Emacs
-
-*~
-.DS_Store
-*#
-.#*
-
-#
-# Local variables:
-# fill-column: 72
-# mode: conf
-# End:
-/UTILITIES/x11idle
+js2-mode/build
