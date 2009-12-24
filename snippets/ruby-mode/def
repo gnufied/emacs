@@ -1,0 +1,5 @@
+#name : def ${method_name}
+# --
+def ${method_name}
+  ${0}
+end
