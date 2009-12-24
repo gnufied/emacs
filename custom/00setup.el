@@ -110,23 +110,20 @@
 (global-set-key "\C-xn" 'bm-next)
 (global-set-key "\C-xp" 'bm-previous)
 
-(load-file "/Users/hemant/Downloads/cedet-1.0pre6/common/cedet.el")
+(load-file "~/new_emacs/cedet/common/cedet.el")
 (global-ede-mode 1)             ; Enable the Project management system
 (semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
 (global-srecode-minor-mode 1)       ; Enable template insertion menu
 
 (add-to-list 'load-path
-             "/Users/hemant/Downloads/ecb-2.40")
+             "~/new_emacs/ecb/")
 (require 'ecb)
 
 (require 'auto-install)
-(setq auto-install-directory "~/.emacs.d/auto-install/")
+(setq auto-install-directory "~/new_emacs/auto-install/")
 
 (add-to-list 'load-path
-             "/Users/hemant/.emacs.d/auto-install")
-
-(add-to-list 'load-path
-             "/Users/hemant/.emacs.d/org-mode/")
+             "~/new_emacs/auto-install")
 
 (require 'init-auto-complete)
 

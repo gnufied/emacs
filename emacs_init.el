@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/new_emacs")
+(add-to-list 'load-path "~/new_emacs/assorted")
 (add-to-list 'load-path	"~/new_emacs/custom")
 (add-to-list 'load-path "~/new_emacs/org-mode/lisp")
 (add-to-list 'load-path "~/new_emacs/ruby-mode")
