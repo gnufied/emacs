@@ -15,6 +15,8 @@
 (tool-bar-mode nil)
 (menu-bar-mode nil)
 (display-time)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
 ;;(scroll-bar-mode nil)
 (setq x-select-enable-clipboard t)
 
