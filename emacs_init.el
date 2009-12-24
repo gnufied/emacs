@@ -2,3 +2,4 @@
       (append (list nil "~/new_emacs"
 		    "~/new_emacs/custom"
 		    "~/new_emacs/org-mode/lisp")))
+(load "00setup.el")
