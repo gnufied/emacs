@@ -102,3 +102,45 @@
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+(require 'bm)
+(global-set-key "\C-xm" 'bm-toggle)
+(global-set-key "\C-xn" 'bm-next)
+(global-set-key "\C-xp" 'bm-previous)
+
+(load-file "/Users/hemant/Downloads/cedet-1.0pre6/common/cedet.el")
+(global-ede-mode 1)             ; Enable the Project management system
+(semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)       ; Enable template insertion menu
+
+(add-to-list 'load-path
+             "/Users/hemant/Downloads/ecb-2.40")
+(require 'ecb)
+
+(require 'auto-install)
+(setq auto-install-directory "~/.emacs.d/auto-install/")
+
+(add-to-list 'load-path
+             "/Users/hemant/.emacs.d/auto-install")
+
+(add-to-list 'load-path
+             "/Users/hemant/.emacs.d/org-mode/")
+
+(require 'init-auto-complete)
+
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+
+(setq path-to-ctags "/usr/local/bin/ctags") ;; <- you're ctags path here
+
+(defun create-tags (dir-name)
+  "Create tags file."
+  (interactive "DDirectory: ")
+  (shell-command
+   (format "%s -f %s/TAGS -e -R %s" path-to-ctags dir-name dir-name))
+  )
+
+(global-set-key "\C-ct" 'visit-tags-table)
+(global-set-key "\C-cd" 'create-tags)
+
