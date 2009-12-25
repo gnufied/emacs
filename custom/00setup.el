@@ -6,6 +6,9 @@
 
 (add-to-list 'default-frame-alist '(width . 175))
 
+(prefer-coding-system 'utf-8)
+(windmove-default-keybindings) 
+
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
@@ -32,6 +35,9 @@
 
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-xt" 'select-frame-by-name)
+
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (global-set-key "\C-cr" 'revert-buffer)
 
@@ -107,27 +113,6 @@
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
-(require 'bm)
-(global-set-key "\C-xm" 'bm-toggle)
-(global-set-key "\C-xn" 'bm-next)
-(global-set-key "\C-xp" 'bm-previous)
-
-(load-file "~/new_emacs/cedet/common/cedet.el")
-(global-ede-mode 1)             ; Enable the Project management system
-(semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)       ; Enable template insertion menu
-
-(add-to-list 'load-path
-             "~/new_emacs/ecb/")
-(require 'ecb)
-
-(require 'auto-install)
-(setq auto-install-directory "~/new_emacs/auto-install/")
-
-(add-to-list 'load-path
-             "~/new_emacs/auto-install")
-
-(require 'init-auto-complete)
 
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 

@@ -3,14 +3,23 @@
 (add-to-list 'load-path	"~/new_emacs/custom")
 (add-to-list 'load-path "~/new_emacs/org-mode/lisp")
 (add-to-list 'load-path "~/new_emacs/ruby-mode")
-(add-to-list 'load-path "~/new_emacs/ruby-mode")
+(add-to-list 'load-path "~/new_emacs/rhtml")
+(add-to-list 'load-path "~/new_emacs/emacs-rails")
 (add-to-list 'load-path "~/new_emacs/yasnippet-0.6.1c")
 
 (load "00setup.el")
 (load "01org-mode.el")
 (load "02ruby-mode.el")
-(load "03html-mode.el")
+;;(load "03html-mode.el")
 (load "04yasnippet.el")
+(load "05rhtml-mode.el")
+;;(load "06rinari-mode.el")
+(load "07rails.el")
+(load "08ido-mode.el")
+(load "09bm.el")
+(load "10cedet.el")
+(load "11ecb.el")
+(load "12auto-install.el")
 
 
 (custom-set-variables

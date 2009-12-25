@@ -95,7 +95,7 @@
                         makefile-mode sh-mode fortran-mode f90-mode ada-mode
                         xml-mode sgml-mode scala-mode
                         haskell-mode literate-haskell-mode
-                        emms-tag-editor-mode
+                        emms-tag-editor-mode rhtml-mode
                         asm-mode
                         org-mode))
 ;; (add-to-list 'ac-trigger-commands 'org-self-insert-command) ; if you want enable auto-complete at org-mode, uncomment this line
