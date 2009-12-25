@@ -299,7 +299,7 @@ Argument NEWVERSION is the version number to use in the current project.
 ;;;;;;  "ede-proj-info.el" "ede-proj-misc.el" "ede-proj-obj.el" "ede-proj-prog.el"
 ;;;;;;  "ede-proj-scheme.el" "ede-proj-shared.el" "ede-proj-skel.el"
 ;;;;;;  "ede-source.el" "ede-speedbar.el" "ede-system.el" "project-am.el")
-;;;;;;  (19225 10280 782279))
+;;;;;;  (19252 14944 752573))
 
 ;;;***
 

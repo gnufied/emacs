@@ -102,7 +102,7 @@ Setup buffer for parse.
 ;;;***
 
 ;;;### (autoloads nil nil ("cogre-load.el" "picture-hack.el" "wisent-dot-wy.el")
-;;;;;;  (19225 10283 768109))
+;;;;;;  (19252 14947 556666))
 
 ;;;***
 
