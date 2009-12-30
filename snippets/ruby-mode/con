@@ -1,5 +1,4 @@
 #name : context "..." do end
 # --
-context "${data}" do 
-  ${0}
+context "${data}" do   ${0}
 end

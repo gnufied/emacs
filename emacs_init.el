@@ -21,7 +21,11 @@
 (load "10cedet.el")
 (load "11ecb.el")
 (load "12auto-install.el")
-
+(load "13enable-yas-mode.el")
+(require 'auto-complete-css)
+;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
+(require 'auto-complete-cpp)
+(require 'auto-complete-python)
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
@@ -29,7 +33,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(ac-candidate-limit 5)
- '(ac-candidate-menu-height 8)
+ '(ac-candidate-menu-height 5)
  '(ac-sources (quote (ac-source-yasnippet ac-source-imenu ac-source-abbrev ac-source-words-in-buffer ac-source-files-in-current-dir ac-source-filename)) t)
  '(display-time-mode t)
  '(ecb-layout-name "left3")

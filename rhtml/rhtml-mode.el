@@ -54,6 +54,8 @@
   (rhtml-activate-fontification))
 
 (add-to-list 'auto-mode-alist '("\\.html\\.erb$" . rhtml-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
+(add-to-list 'auto-mode-alist '("\\.rhtml$" . rhtml-mode))
 
 (defun extract-partial (begin end partial-name)
   (interactive "r\nsName your partial: ")

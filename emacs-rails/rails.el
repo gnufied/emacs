@@ -407,22 +407,23 @@ necessary."
             (require 'rails-ruby)
             (require 'ruby-electric)
             (ruby-electric-mode (or rails-enable-ruby-electric -1))
-            (ruby-hs-minor-mode t)
+            ;;(ruby-hs-minor-mode t)
             (imenu-add-to-menubar "IMENU")
             (modify-syntax-entry ?! "w" (syntax-table))
             (modify-syntax-entry ?: "w" (syntax-table))
             (modify-syntax-entry ?_ "w" (syntax-table))
             (local-set-key (kbd "C-.") 'complete-tag)
-            (local-set-key (if rails-use-another-define-key
-                               (kbd "TAB") (kbd "<tab>"))
-                           'indent-and-complete)
+            ;;(local-set-key (if rails-use-another-define-key
+	    ;;(kbd "TAB") (kbd "<tab>"))
+	    ;;'indent-and-complete)
             (local-set-key (rails-key "f") '(lambda()
                                               (interactive)
                                               (mouse-major-mode-menu (rails-core:menu-position))))
             (local-set-key (kbd "C-:") 'ruby-toggle-string<>simbol)
-            (local-set-key (if rails-use-another-define-key
-                               (kbd "RET") (kbd "<return>"))
-                           'ruby-newline-and-indent)))
+            ;;(local-set-key (if rails-use-another-define-key
+	    ;;(kbd "RET") (kbd "<return>"))
+	    ;;'ruby-newline-and-indent)
+	    ))
 
 (add-hook 'speedbar-mode-hook
           (lambda()
