@@ -41,6 +41,7 @@
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(ecb-source-path (quote ("/Users/hemant/checkout/solaro" "/Users/hemant/rails_yard/actively")))
+ '(fill-column 100)
  '(rng-nxml-auto-validate-flag nil)
  '(show-paren-mode t)
  '(transient-mark-mode t))

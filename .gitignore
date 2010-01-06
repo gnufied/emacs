@@ -107,4 +107,5 @@ cedet/eieio/autoloads-compile-script
 cedet/eieio/eieio-compile-script
 cedet/eieio/eieio-loaddefs.el~
 cedet/eieio/examples-compile-script
+emacs-rails/TAGS
 

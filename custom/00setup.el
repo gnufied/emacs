@@ -136,3 +136,8 @@
   (byte-recompile-directory dotfiles-dir 0))
 
 
+(define-key isearch-mode-map (kbd "C-o") ; occur easily inside isearch
+  (lambda ()
+    (interactive)
+    (let ((case-fold-search isearch-case-fold-search))
+      (occur (if isearch-regexp isearch-string (regexp-quote isearch-string))))))
