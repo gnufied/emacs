@@ -6,6 +6,7 @@
 (add-to-list 'load-path "~/new_emacs/rhtml")
 (add-to-list 'load-path "~/new_emacs/emacs-rails")
 (add-to-list 'load-path "~/new_emacs/yasnippet-0.6.1c")
+(add-to-list 'load-path "~/new_emacs/scala-mode")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -22,6 +23,8 @@
 ;;(load "11ecb.el")
 (load "12auto-install.el")
 (load "13enable-yas-mode.el")
+(load "14scala-mode.el")
+
 (require 'auto-complete-css)
 ;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
 (require 'auto-complete-cpp)
