@@ -9,6 +9,11 @@
 (prefer-coding-system 'utf-8)
 (windmove-default-keybindings) 
 
+(setq-default truncate-lines nil)
+
+;; trucate even even when screen is split into multiple windows
+(setq-default truncate-partial-width-windows nil)
+
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
