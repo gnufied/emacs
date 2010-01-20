@@ -17,7 +17,12 @@
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
-;; highlight incremental search
+(setq path "/Users/hemant/.rvm/bin:/Users/hemant/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/scala/bin:/Users/hemant/.gem/ruby/1.8/bin:/Users/hemant/android-sdk-mac/tools:/sbin:/usr/sbin:/usr/bin:/bin:/usr/X11/bin")
+
+(setenv "PATH" path)
+ 
+
+;; Highlight incremental search
 (setq search-highlight t)
 (transient-mark-mode t)
 (tool-bar-mode nil)
