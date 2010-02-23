@@ -1,0 +1,5 @@
+#name : fast_context "..." do end
+# --
+fast_context "${data}" do
+  ${0}
+end
