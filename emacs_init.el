@@ -30,10 +30,10 @@
 (load "16color-theme.el")
 (load "17rsense.el")
 
-(require 'auto-complete-css)
+;;(require 'auto-complete-css)
 ;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
-(require 'auto-complete-cpp)
-(require 'auto-complete-python)
+;;(require 'auto-complete-cpp)
+;;(require 'auto-complete-python)
 
 (tool-bar-mode)
 
@@ -57,10 +57,11 @@
  '(rng-nxml-auto-validate-flag nil)
  '(show-paren-mode t)
  '(transient-mark-mode t))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ac-completion-face ((t (:background "SandyBrown" :foreground "black"))))
- '(ac-selection-face ((t (:background "salmon" :foreground "black")))))
+
+;; (custom-set-faces
+;;   ;; custom-set-faces was added by Custom.
+;;   ;; If you edit it by hand, you could mess it up, so be careful.
+;;   ;; Your init file should contain only one such instance.
+;;   ;; If there is more than one, they won't work right.
+;;  '(ac-completion-face ((t (:background "SandyBrown" :foreground "black"))))
+;;  '(ac-selection-face ((t (:background "salmon" :foreground "black")))))
