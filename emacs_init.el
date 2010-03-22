@@ -7,6 +7,8 @@
 (add-to-list 'load-path "~/new_emacs/emacs-rails")
 (add-to-list 'load-path "~/new_emacs/yasnippet-0.6.1c")
 (add-to-list 'load-path "~/new_emacs/scala-mode")
+(add-to-list 'load-path "~/new_emacs/markdown-mode/")
+(add-to-list 'load-path "~/new_emacs/color-theme/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -24,6 +26,8 @@
 (load "12auto-install.el")
 (load "13enable-yas-mode.el")
 (load "14scala-mode.el")
+(load "15markdown.el")
+(load "16color-theme.el")
 
 (require 'auto-complete-css)
 ;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
