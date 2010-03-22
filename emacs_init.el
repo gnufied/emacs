@@ -28,6 +28,7 @@
 (load "14scala-mode.el")
 (load "15markdown.el")
 (load "16color-theme.el")
+(load "17rsense.el")
 
 (require 'auto-complete-css)
 ;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
