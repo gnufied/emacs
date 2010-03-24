@@ -20,7 +20,8 @@
 (setq path "/Users/hemant/.rvm/bin:/Users/hemant/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/scala/bin:/Users/hemant/.gem/ruby/1.8/bin:/Users/hemant/android-sdk-mac/tools:/sbin:/usr/sbin:/usr/bin:/bin:/usr/X11/bin")
 
 (setenv "PATH" path)
- 
+
+(set-cursor-color "dark violet") 
 
 ;; Highlight incremental search
 (setq search-highlight t)

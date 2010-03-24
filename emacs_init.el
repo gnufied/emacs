@@ -9,6 +9,7 @@
 (add-to-list 'load-path "~/new_emacs/scala-mode")
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
 (add-to-list 'load-path "~/new_emacs/color-theme/")
+(add-to-list 'load-path "~/new_emacs/auto_complete_install")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -28,26 +29,10 @@
 (load "14scala-mode.el")
 (load "15markdown.el")
 (load "16color-theme.el")
-
-(add-to-list 'load-path "~/new_emacs/auto_complete_install")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/new_emacs/auto_complete_install/ac-dict")
-(ac-config-default)
-
-;;(server-start)
-
-
+(load "18auto-complete.el")
 (load "17rsense.el")
 
-(add-hook 'ruby-mode-hook
-          (lambda ()
-            (add-to-list 'ac-sources 'ac-source-rsense-method)
-            (add-to-list 'ac-sources 'ac-source-rsense-constant)))
-
-;;(require 'auto-complete-css)
-;;(require 'auto-complete-ruby) ;; rcodetools is not installed and hence using this
-;;(require 'auto-complete-cpp)
-;;(require 'auto-complete-python)
+(server-start)
 
 (tool-bar-mode)
 
