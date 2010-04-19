@@ -2,4 +2,3 @@
 (add-to-list 'ac-dictionary-directories "~/new_emacs/auto_complete_install/ac-dict")
 (ac-config-default)
 (setq ac-use-quick-help nil)
-(setq ac-auto-start 3)

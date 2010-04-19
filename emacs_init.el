@@ -30,7 +30,7 @@
 (load "15markdown.el")
 (load "16color-theme.el")
 (load "18auto-complete.el")
-(load "17rsense.el")
+;;(load "17rsense.el")
 
 (server-start)
 
@@ -64,3 +64,4 @@
 ;;   ;; If there is more than one, they won't work right.
 ;;  '(ac-completion-face ((t (:background "SandyBrown" :foreground "black"))))
 ;;  '(ac-selection-face ((t (:background "salmon" :foreground "black")))))
+(put 'upcase-region 'disabled nil)
