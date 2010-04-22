@@ -21,7 +21,7 @@
 
 (setenv "PATH" path)
 
-(set-cursor-color "dark violet") 
+(set-cursor-color "red") 
 
 ;; Highlight incremental search
 (setq search-highlight t)

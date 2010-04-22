@@ -24,9 +24,9 @@
   "Return the test name based on point"
   (save-excursion
     (ruby-end-of-block)
-    (let ((should (when (search-backward-regexp "^[ ]*should \"\\([a-z0-9_ ]+\\)\"[ ]*do" nil t)
+    (let ((should (when (search-backward-regexp "^[ ]*should \"\\([a-zA-Z0-9_ ]+\\)\"[ ]*do" nil t)
                     (match-string-no-properties 1)))
-          (context (when (search-backward-regexp "^[ ]*context \"\\([a-z0-9_ ]+\\)\"[ ]*do" nil t)
+          (context (when (search-backward-regexp "^[ ]*context \"\\([a-zA-Z0-9_ ]+\\)\"[ ]*do" nil t)
                      (match-string-no-properties 1))))
       (when (and should context)
         (concat context " should " should)))))
@@ -35,7 +35,7 @@
   "Return the shoulda context name based on point"
   (save-excursion
     (ruby-end-of-block)
-    (when (search-backward-regexp "^[ ]*\\(?:context\\|fast_context\\) \"\\([a-z0-9_ ]+\\)\"[ ]*do" nil t)
+    (when (search-backward-regexp "^[ ]*\\(?:context\\|fast_context\\) \"\\([a-zA-Z0-9_ ]+\\)\"[ ]*do" nil t)
       (match-string-no-properties 1))))
 
 (defun rails-shoulda:run-current-should ()
