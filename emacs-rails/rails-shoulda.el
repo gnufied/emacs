@@ -35,7 +35,7 @@
   "Return the shoulda context name based on point"
   (save-excursion
     (ruby-end-of-block)
-    (when (search-backward-regexp "^[ ]*\\(?:context\\|fast_context\\) \"\\([a-zA-Z0-9_ ]+\\)\"[ ]*do" nil t)
+    (when (search-backward-regexp "^[ ]*\\(?:context\\|fast_context\\) [\"\']\\([\'\"a-zA-Z0-9_ ]+\\)[\"\'][ ]*do" nil t)
       (match-string-no-properties 1))))
 
 (defun rails-shoulda:run-current-should ()

@@ -122,7 +122,7 @@ Emacs w3m browser."
   :group 'rails
   :type 'string)
 
-(defcustom rails-ruby-command "ruby"
+(defcustom rails-ruby-command "/opt/ruby-enterprise-1.8.7-2010.01/bin/ruby"
   "Ruby preferred command line invocation."
   :group 'rails
   :type 'string)

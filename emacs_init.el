@@ -15,10 +15,13 @@
 (load "00setup.el")
 (load "01org-mode.el")
 (load "02ruby-mode.el")
+
 ;;(load "03html-mode.el")
+
 (load "04yasnippet.el")
 (load "05rhtml-mode.el")
-;;(load "06rinari-mode.el")
+
+
 (load "07rails.el")
 (load "08ido-mode.el")
 (load "09bm.el")
@@ -30,11 +33,13 @@
 (load "15markdown.el")
 (load "16color-theme.el")
 (load "18auto-complete.el")
+
 ;;(load "17rsense.el")
 
 (server-start)
 
 (tool-bar-mode)
+
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.

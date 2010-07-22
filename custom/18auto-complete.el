@@ -7,5 +7,9 @@
 	  (lambda ()
 	    (yas/minor-mode-on)
 	    ))
+(add-to-list 'ac-modes 'scala-mode)
+
+
+
 
 
