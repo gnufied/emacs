@@ -33,6 +33,7 @@
 (load "15markdown.el")
 (load "16color-theme.el")
 (load "18auto-complete.el")
+(load "19haml-mode.el")
 
 ;;(load "17rsense.el")
 
