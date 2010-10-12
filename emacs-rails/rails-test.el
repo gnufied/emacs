@@ -171,7 +171,7 @@ Used when it's determined that the output buffer needs to be shown."
   (let ((param (if param
                    (list file param)
                  (list file))))
-    (rails-script:run "/opt/ruby-enterprise-1.8.7-2010.01/bin/ruby" param 'rails-test:compilation-mode)))
+    (rails-script:run "/opt/ruby-enterprise-1.8.7-2010.02/bin/ruby" param 'rails-test:compilation-mode)))
 
 (defun rails-test:run-current ()
   "Run a test for the current controller/model/mailer."
