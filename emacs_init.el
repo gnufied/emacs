@@ -38,6 +38,8 @@
 (load "18auto-complete.el")
 (load "19haml-mode.el")
 (load "20rvm.el")
+(require 'ack)
+
 ;;(load "17rsense.el")
 
 (server-start)
