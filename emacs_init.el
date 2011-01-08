@@ -12,7 +12,8 @@
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
 (add-to-list 'load-path "~/new_emacs/color-theme/")
 (add-to-list 'load-path "~/new_emacs/auto_complete_install")
-(add-to-list 'load-path "~/new_emacs/rvm.el/")
+(add-to-list 'load-path "~/new_emacs/rvm/")
+(add-to-list 'load-path "~/new_emacs/cucumber/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -39,6 +40,8 @@
 (load "19haml-mode.el")
 (load "20rvm.el")
 (require 'ack)
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 ;;(load "17rsense.el")
 
