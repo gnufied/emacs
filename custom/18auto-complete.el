@@ -8,6 +8,7 @@
 	    (yas/minor-mode-on)
 	    ))
 (add-to-list 'ac-modes 'scala-mode)
+(add-to-list 'ac-modes 'html-mode)
 
 
 
