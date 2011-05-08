@@ -14,6 +14,9 @@
 (add-to-list 'load-path "~/new_emacs/auto_complete_install")
 (add-to-list 'load-path "~/new_emacs/rvm/")
 (add-to-list 'load-path "~/new_emacs/cucumber/")
+(add-to-list 'load-path "~/new_emacs/rspec-mode/")
+(add-to-list 'load-path "~/new_emacs/coffee-mode/")
+(add-to-list 'load-path "~/new_emacs/sass-mode/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -39,8 +42,13 @@
 (load "18auto-complete.el")
 (load "19haml-mode.el")
 (load "20rvm.el")
+(load "21coffee.el")
+(load "22sass.el")
+
 (require 'ack)
 (require 'feature-mode)
+(require 'rspec-mode)
+
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (autoload 'js2-mode "js2" nil t)
@@ -70,6 +78,7 @@
  '(ecb-source-path (quote ("/Users/hemant/checkout/solaro" "/Users/hemant/rails_yard/actively")))
  '(ecb-tip-of-the-day nil)
  '(fill-column 100)
+ '(js2-bounce-indent-p t)
  '(rng-nxml-auto-validate-flag nil)
  '(show-paren-mode t)
  '(transient-mark-mode t))
