@@ -29,3 +29,5 @@
 	       (coffee-compile-file))))
 
 (add-hook 'coffee-mode-hook '(lambda () (coffee-custom)))
+
+(add-to-list 'ac-modes 'coffee-mode)
