@@ -3,6 +3,9 @@
 ;; Part of the Emacs Starter Kit
 
 (require 'ruby-mode)
+(require 'ruby-style)
+(add-hook 'c-mode-hook 'ruby-style-c-mode)
+(add-hook 'c++-mode-hook 'ruby-style-c-mode)
 
 ;; Rake files are ruby, too, as are gemspecs, rackup files, and gemfiles.
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
@@ -23,3 +26,12 @@
            ))
 
 
+(autoload 'run-ruby "inf-ruby"
+  "Run an inferior Ruby process")
+(autoload 'inf-ruby-keys "inf-ruby"
+  "Set local key defs for inf-ruby in ruby-mode")
+
+(add-hook 'ruby-mode-hook
+	  '(lambda ()
+	     (inf-ruby-keys)
+	     ))
