@@ -17,10 +17,6 @@
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
-(setq path "/Users/hemant/.rvm/bin:/Users/hemant/bin:/opt/ruby-enterprise-1.8.7-2010.01/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/scala/bin:/Users/hemant/android-sdk-mac/tools:/sbin:/usr/sbin:/usr/bin:/bin:/usr/X11/bin")
-
-(setenv "PATH" path)
-
 (set-cursor-color "red") 
 
 ;; Highlight incremental search

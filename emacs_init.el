@@ -44,10 +44,15 @@
 (load "20rvm.el")
 (load "21coffee.el")
 (load "22sass.el")
+(load "23mustache.el")
 
 (require 'ack)
 (require 'feature-mode)
 (require 'rspec-mode)
+(setq rspec-use-rvm t)
+(setq rspec-use-rake-flag nil)
+(setq rspec-spec-command "bundle exec rspec")
+(require 'hide-comnt)
 
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
