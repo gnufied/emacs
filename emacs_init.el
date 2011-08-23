@@ -45,6 +45,7 @@
 (load "21coffee.el")
 (load "22sass.el")
 (load "23mustache.el")
+(load "25emacs_window.el")
 
 (require 'ack)
 (require 'feature-mode)
