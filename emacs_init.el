@@ -46,6 +46,8 @@
 (load "22sass.el")
 (load "23mustache.el")
 (load "25emacs_window.el")
+(load "26git_commit.el")
+(load "27emacsclient.el")
 
 (require 'ack)
 (require 'feature-mode)
