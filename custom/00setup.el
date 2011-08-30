@@ -25,7 +25,9 @@
 ;; Highlight incremental search
 (setq search-highlight t)
 (transient-mark-mode t)
-(tool-bar-mode nil)
+(if (display-graphic-p)
+  (tool-bar-mode nil))
+
 (display-time)
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 

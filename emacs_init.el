@@ -64,7 +64,8 @@
 
 (server-start)
 
-(tool-bar-mode)
+(if (display-graphic-p)
+    (tool-bar-mode))
 
 
 (custom-set-variables
