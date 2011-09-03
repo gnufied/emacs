@@ -23,7 +23,7 @@
 (load "01org-mode.el")
 (load "02ruby-mode.el")
 
-;;(load "03html-mode.el")
+(load "03html-mode.el")
 
 (load "04yasnippet.el")
 (load "05rhtml-mode.el")
