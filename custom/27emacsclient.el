@@ -7,6 +7,6 @@
 
 (add-hook 'server-switch-hook
 	  (lambda ()
-	    (menu-bar-mode)))
+	    (menu-bar-mode -1)))
 
 (add-hook 'server-done-hook (lambda nil (kill-buffer nil)))
