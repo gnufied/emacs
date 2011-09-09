@@ -34,7 +34,6 @@
            emacs-minor-version)))
 
 (eval-when-compile
-  (require 'speedbar)
   (require 'inf-ruby)
   (require 'ruby-mode)
   (require 'ruby-electric))
@@ -425,9 +424,9 @@ necessary."
 	    ;;'ruby-newline-and-indent)
 	    ))
 
-(add-hook 'speedbar-mode-hook
-          (lambda()
-            (speedbar-add-supported-extension "\\.rb")))
+;; (add-hook 'speedbar-mode-hook
+;;           (lambda()
+;;             (speedbar-add-supported-extension "\\.rb")))
 
 (add-hook 'find-file-hooks
           (lambda()

@@ -27,8 +27,7 @@
 ;;; Code:
 
 (defvar rails-features:list
-  '(rails-speedbar-feature
-    rails-rspec-feature)
+  '(rails-rspec-feature)
   "List of features")
 
 (defvar rails-features:installed-p nil)
