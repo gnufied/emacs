@@ -17,10 +17,10 @@
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
-(set-cursor-color "keyboardFocusIndicatorColor")
+(set-cursor-color "Magenta")
 
 (setq default-frame-alist
-      '((cursor-color . "keyboardFocusIndicatorColor")))
+      '((cursor-color . "Magenta")))
 
 ;; Highlight incremental search
 (setq search-highlight t)
@@ -57,7 +57,7 @@
 (setq auto-save-default nil)
 
 ;; change cursor color
-(set-cursor-color "Red")
+(set-cursor-color "Magenta")
 
 ;;some custom functions, stolen for internet
 (defun geosoft-forward-word ()
