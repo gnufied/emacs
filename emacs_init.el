@@ -34,6 +34,7 @@
 (load "09bm.el")
 ;;(load "10cedet.el")
 ;;(load "11ecb.el")
+;;
 (load "12auto-install.el")
 (load "13enable-yas-mode.el")
 (load "14scala-mode.el")
