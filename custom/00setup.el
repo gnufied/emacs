@@ -9,6 +9,8 @@
 (prefer-coding-system 'utf-8)
 (windmove-default-keybindings) 
 
+(set-frame-font "-apple-Inconsolata-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+
 (setq-default truncate-lines nil)
 
 ;; trucate even even when screen is split into multiple windows
