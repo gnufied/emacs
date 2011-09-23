@@ -17,6 +17,7 @@
 (add-to-list 'load-path "~/new_emacs/rspec-mode/")
 (add-to-list 'load-path "~/new_emacs/coffee-mode/")
 (add-to-list 'load-path "~/new_emacs/sass-mode/")
+(add-to-list 'load-path "~/new_emacs/magit/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -49,6 +50,7 @@
 (load "25emacs_window.el")
 (load "26git_commit.el")
 (load "27emacsclient.el")
+(load "28magit.el")
 
 (require 'ack)
 (require 'feature-mode)
