@@ -4,3 +4,6 @@
 [submodule "sass-mode"]
 	path = sass-mode
 	url = git://github.com/nex3/sass-mode.git
+[submodule "magit"]
+	path = magit
+	url = git://github.com/magit/magit.git
