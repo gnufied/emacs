@@ -51,6 +51,8 @@
 (load "26git_commit.el")
 (load "27emacsclient.el")
 (load "28magit.el")
+(load "29after_save.el")
+
 
 (require 'ack)
 (require 'feature-mode)
