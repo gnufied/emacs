@@ -10,9 +10,6 @@
 [submodule "rspec-mode"]
 	path = rspec-mode
 	url = git://github.com/pezra/rspec-mode.git
-[submodule "cucumber.el"]
-	path = cucumber.el
-	url = git://github.com/michaelklishin/cucumber.el.git
 [submodule "ace-jump-mode"]
 	path = ace-jump-mode
 	url = git://github.com/winterTTr/ace-jump-mode.git

@@ -13,7 +13,6 @@
 (add-to-list 'load-path "~/new_emacs/color-theme/")
 (add-to-list 'load-path "~/new_emacs/auto_complete")
 (add-to-list 'load-path "~/new_emacs/rvm/")
-(add-to-list 'load-path "~/new_emacs/cucumber.el/")
 (add-to-list 'load-path "~/new_emacs/rspec-mode/")
 (add-to-list 'load-path "~/new_emacs/coffee-mode/")
 (add-to-list 'load-path "~/new_emacs/sass-mode/")
@@ -60,7 +59,7 @@
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (load "30rspec_mode.el")
-(load "31feature_mode.el")
+;;(load "31feature_mode.el")
 (load "32ace_jump.el")
 
 ;;(load "17rsense.el")
