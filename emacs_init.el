@@ -7,7 +7,7 @@
 (add-to-list 'load-path "~/new_emacs/ruby-mode")
 (add-to-list 'load-path "~/new_emacs/rhtml")
 (add-to-list 'load-path "~/new_emacs/emacs-rails")
-(add-to-list 'load-path "~/new_emacs/yasnippet-0.6.1c")
+(add-to-list 'load-path "~/new_emacs/yasnippet")
 (add-to-list 'load-path "~/new_emacs/scala-mode")
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
 (add-to-list 'load-path "~/new_emacs/color-theme/")

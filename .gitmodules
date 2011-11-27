@@ -16,3 +16,6 @@
 [submodule "ace-jump-mode"]
 	path = ace-jump-mode
 	url = git://github.com/winterTTr/ace-jump-mode.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git
