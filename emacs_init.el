@@ -51,15 +51,16 @@
 (load "26git_commit.el")
 (load "27emacsclient.el")
 (load "28magit.el")
-(load "29after_save.el")
-
+;;(load "29save_hooks.el")
 
 (require 'ack)
 (require 'feature-mode)
 (require 'rspec-mode)
-(setq rspec-use-rvm t)
-(setq rspec-use-rake-flag nil)
+
 (setq rspec-spec-command "bundle exec rspec")
+(setq rspec-use-rake-flag nil)
+(setq rspec-rake-command "bundle exec rake")
+
 (require 'hide-comnt)
 
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
@@ -70,10 +71,7 @@
 ;;(load "17rsense.el")
 
 (server-start)
-
-(if (display-graphic-p)
-    (tool-bar-mode))
-
+(tool-bar-mode -1)
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
@@ -90,7 +88,6 @@
  '(ecb-show-sources-in-directories-buffer (quote ("left7" "left13" "left14" "left15" "fav2" "code4" "code")))
  '(ecb-source-path (quote ("/Users/hemant/checkout/solaro" "/Users/hemant/rails_yard/actively" ("/" "/") #("/Users/gnufied" 0 14 (help-echo "Mouse-2 toggles maximizing, mouse-3 displays a popup-menu")))))
  '(ecb-tip-of-the-day nil)
- '(fill-column 100)
  '(js2-bounce-indent-p t)
  '(rng-nxml-auto-validate-flag nil)
  '(show-paren-mode t)

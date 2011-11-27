@@ -4,6 +4,8 @@
 
 (require 'ruby-mode)
 (require 'ruby-style)
+(require 'yari)
+
 (add-hook 'c-mode-hook 'ruby-style-c-mode)
 (add-hook 'c++-mode-hook 'ruby-style-c-mode)
 
@@ -24,6 +26,12 @@
             (require 'ruby-electric)
             (ruby-electric-mode t)
            ))
+
+
+(defun ri-bind-key ()
+  (local-set-key [f1] 'yari))
+(add-hook 'ruby-mode-hook 'ri-bind-key)
+
 
 
 (autoload 'run-ruby "inf-ruby"
