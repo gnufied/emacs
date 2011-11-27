@@ -11,7 +11,7 @@
 (add-to-list 'load-path "~/new_emacs/scala-mode")
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
 (add-to-list 'load-path "~/new_emacs/color-theme/")
-(add-to-list 'load-path "~/new_emacs/auto_complete_install")
+(add-to-list 'load-path "~/new_emacs/auto_complete")
 (add-to-list 'load-path "~/new_emacs/rvm/")
 (add-to-list 'load-path "~/new_emacs/cucumber.el/")
 (add-to-list 'load-path "~/new_emacs/rspec-mode/")
