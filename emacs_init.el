@@ -57,9 +57,10 @@
 (require 'feature-mode)
 (require 'rspec-mode)
 
-(setq rspec-spec-command "bundle exec rspec")
+;; (setq rspec-spec-command "bundle exec rspec")
 (setq rspec-use-rake-flag nil)
-(setq rspec-rake-command "bundle exec rake")
+(setq rspec-spec-command "rspec")
+;; (setq rspec-rake-command "bundle exec rake")
 
 (require 'hide-comnt)
 
