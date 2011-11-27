@@ -7,3 +7,6 @@
 [submodule "magit"]
 	path = magit
 	url = git://github.com/magit/magit.git
+[submodule "rspec-mode"]
+	path = rspec-mode
+	url = git://github.com/pezra/rspec-mode.git
