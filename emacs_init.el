@@ -13,11 +13,12 @@
 (add-to-list 'load-path "~/new_emacs/color-theme/")
 (add-to-list 'load-path "~/new_emacs/auto_complete_install")
 (add-to-list 'load-path "~/new_emacs/rvm/")
-(add-to-list 'load-path "~/new_emacs/cucumber/")
+(add-to-list 'load-path "~/new_emacs/cucumber.el/")
 (add-to-list 'load-path "~/new_emacs/rspec-mode/")
 (add-to-list 'load-path "~/new_emacs/coffee-mode/")
 (add-to-list 'load-path "~/new_emacs/sass-mode/")
 (add-to-list 'load-path "~/new_emacs/magit/")
+(add-to-list 'load-path "~/new_emacs/ace-jump-mode/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -54,20 +55,13 @@
 ;;(load "29save_hooks.el")
 
 (require 'ack)
-(require 'feature-mode)
-(require 'rspec-mode)
-
-;; (setq rspec-spec-command "bundle exec rspec")
-(setq rspec-use-rake-flag nil)
-(setq rspec-spec-command "rspec")
-;; (setq rspec-rake-command "bundle exec rake")
-
 (require 'hide-comnt)
-
-(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(load "30rspec_mode.el")
+(load "31feature_mode.el")
+(load "32ace_jump.el")
 
 ;;(load "17rsense.el")
 
