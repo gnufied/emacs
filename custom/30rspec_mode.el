@@ -1,5 +1,5 @@
 (require 'rspec-mode)
 ;; (setq rspec-spec-command "bundle exec rspec")
-(setq rspec-use-rake-flag nil)
-(setq rspec-spec-command "rspec")
+;;(setq rspec-use-rake-flag nil)
+;;(setq rspec-spec-command "rspec")
 ;; (setq rspec-rake-command "bundle exec rake")

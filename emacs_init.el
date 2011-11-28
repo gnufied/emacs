@@ -18,6 +18,7 @@
 (add-to-list 'load-path "~/new_emacs/sass-mode/")
 (add-to-list 'load-path "~/new_emacs/magit/")
 (add-to-list 'load-path "~/new_emacs/ace-jump-mode/")
+(add-to-list 'load-path "~/new_emacs/rules-editing-mode/")
 
 (load "load_vars.el")
 (load "00setup.el")
@@ -61,6 +62,7 @@
 (load "30rspec_mode.el")
 ;;(load "31feature_mode.el")
 (load "32ace_jump.el")
+(load "my-drools.el")
 
 ;;(load "17rsense.el")
 

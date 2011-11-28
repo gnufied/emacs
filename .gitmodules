@@ -16,3 +16,6 @@
 [submodule "yasnippet"]
 	path = yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "rules-editing-mode"]
+	path = rules-editing-mode
+	url = git://github.com/pdorrell/rules-editing-mode.git
