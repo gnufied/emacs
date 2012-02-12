@@ -12,6 +12,8 @@
 (set-frame-font "-apple-Inconsolata-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
 
 (setq-default truncate-lines nil)
+(setq-default indent-tabs-mode nil)
+;;(enable-theme 'solarized-dark)
 
 ;; trucate even even when screen is split into multiple windows
 (setq-default truncate-partial-width-windows nil)
@@ -19,10 +21,10 @@
 ;; y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)              
 
-(set-cursor-color "Magenta")
+(set-cursor-color "red")
 
 (setq default-frame-alist
-      '((cursor-color . "Magenta")))
+      '((cursor-color . "red")))
 
 ;; Highlight incremental search
 (setq search-highlight t)
@@ -55,9 +57,6 @@
 (setq backup-inhibited t)
 ;;disable auto save
 (setq auto-save-default nil)
-
-;; change cursor color
-(set-cursor-color "Magenta")
 
 ;;some custom functions, stolen for internet
 (defun geosoft-forward-word ()

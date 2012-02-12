@@ -1,5 +1,3 @@
-(set-cursor-color 'red)
-
 (add-to-list 'load-path "~/new_emacs")
 (add-to-list 'load-path "~/new_emacs/assorted")
 (add-to-list 'load-path	"~/new_emacs/custom")
@@ -19,6 +17,7 @@
 (add-to-list 'load-path "~/new_emacs/magit/")
 (add-to-list 'load-path "~/new_emacs/ace-jump-mode/")
 (add-to-list 'load-path "~/new_emacs/rules-editing-mode/")
+(add-to-list 'load-path "~/new_emacs/emacs-color-theme-solarized/")
 
 (load "load_vars.el")
 (load "00setup.el")
