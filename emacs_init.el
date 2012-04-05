@@ -9,7 +9,6 @@
 (add-to-list 'load-path "~/new_emacs/scala-mode")
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
 (add-to-list 'load-path "~/new_emacs/color-theme/")
-(add-to-list 'load-path "~/new_emacs/auto_complete")
 (add-to-list 'load-path "~/new_emacs/rvm/")
 (add-to-list 'load-path "~/new_emacs/rspec-mode/")
 (add-to-list 'load-path "~/new_emacs/coffee-mode/")
@@ -19,8 +18,12 @@
 (add-to-list 'load-path "~/new_emacs/rules-editing-mode/")
 (add-to-list 'load-path "~/new_emacs/emacs-color-theme-solarized/")
 
+
 (load "load_vars.el")
 (load "00setup.el")
+(load "33package.el")
+(load "34misc.el")
+
 (load "01org-mode.el")
 (load "02ruby-mode.el")
 
@@ -40,8 +43,9 @@
 (load "13enable-yas-mode.el")
 (load "14scala-mode.el")
 (load "15markdown.el")
-(load "16color-theme.el")
+;;(load "16color-theme.el")
 (load "18auto-complete.el")
+
 (load "19haml-mode.el")
 ;;(load "20rvm.el")
 (load "21coffee.el")
@@ -65,6 +69,7 @@
 
 ;;(load "17rsense.el")
 
+
 (server-start)
 (tool-bar-mode -1)
 
@@ -77,12 +82,6 @@
  '(ac-menu-height 5)
  '(ac-sources (quote (ac-source-yasnippet ac-source-imenu ac-source-abbrev ac-source-words-in-buffer ac-source-files-in-current-dir ac-source-filename)) t)
  '(display-time-mode t)
- '(ecb-layout-window-sizes (quote (("code4" (0.24 . 0.6666666666666666) (0.24 . 0.3111111111111111)) ("fav2" (0.22772277227722773 . 0.49056603773584906) (0.22772277227722773 . 0.49056603773584906)) ("fav" (0.2057142857142857 . 0.4888888888888889) (0.2057142857142857 . 0.4888888888888889)) ("left3" (0.21910112359550563 . 0.2765957446808511) (0.21910112359550563 . 0.3404255319148936) (0.21910112359550563 . 0.3617021276595745)))))
- '(ecb-options-version "2.40")
- '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
- '(ecb-show-sources-in-directories-buffer (quote ("left7" "left13" "left14" "left15" "fav2" "code4" "code")))
- '(ecb-source-path (quote ("/Users/hemant/checkout/solaro" "/Users/hemant/rails_yard/actively" ("/" "/") #("/Users/gnufied" 0 14 (help-echo "Mouse-2 toggles maximizing, mouse-3 displays a popup-menu")))))
- '(ecb-tip-of-the-day nil)
  '(js2-bounce-indent-p t)
  '(rng-nxml-auto-validate-flag nil)
  '(show-paren-mode t)
