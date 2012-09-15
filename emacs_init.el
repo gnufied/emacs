@@ -5,6 +5,7 @@
 (add-to-list 'load-path "~/new_emacs/ruby-mode")
 (add-to-list 'load-path "~/new_emacs/rhtml")
 (add-to-list 'load-path "~/new_emacs/emacs-rails")
+(add-to-list 'load-path "~/new_emacs/helm")
 (add-to-list 'load-path "~/new_emacs/yasnippet")
 (add-to-list 'load-path "~/new_emacs/scala-mode")
 (add-to-list 'load-path "~/new_emacs/markdown-mode/")
@@ -17,10 +18,15 @@
 (add-to-list 'load-path "~/new_emacs/ace-jump-mode/")
 (add-to-list 'load-path "~/new_emacs/rules-editing-mode/")
 (add-to-list 'load-path "~/new_emacs/emacs-color-theme-solarized/")
+(add-to-list 'load-path "~/new_emacs/emacs-slim")
 
+(require 'ansi-color)
+(require 'ack)
+(require 'nav)
 
 (load "load_vars.el")
 (load "00setup.el")
+;;(load "35helm.el")
 (load "33package.el")
 (load "34misc.el")
 
@@ -36,8 +42,9 @@
 (load "07rails.el")
 (load "08ido-mode.el")
 (load "09bm.el")
-;;(load "10cedet.el")
-;;(load "11ecb.el")
+;; (load "10cedet.el")
+;; (load "11ecb.el")
+
 ;;
 (load "12auto-install.el")
 (load "13enable-yas-mode.el")
@@ -65,7 +72,11 @@
 (load "30rspec_mode.el")
 ;;(load "31feature_mode.el")
 (load "32ace_jump.el")
+(load "36xml.el")
+(load "37dirtree.el")
 (load "my-drools.el")
+
+(require 'slim-mode)
 
 ;;(load "17rsense.el")
 

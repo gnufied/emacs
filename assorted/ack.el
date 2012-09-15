@@ -3,7 +3,7 @@
 ;; Copyright (C) 2008 Philip Jackson
 
 ;; Author: Philip Jackson <phil@shellarchive.co.uk>
-;; Version: 0.4
+;; Version: 0.1
 
 ;; This file is not currently part of GNU Emacs.
 
@@ -35,14 +35,10 @@
 ;; your initialisation file. You can then M-x ack and you're off.
 
 (require 'compile)
-(require 'grep)
 
-(defvar ack-guess-type nil
+(defvar ack-guess-type t
   "Setting this value to `t' will have `ack' do its best to fill
 in the --type argument to the ack command")
-
-(defvar ack-command "ack --nocolor --nogroup "
-  "The command to be run by the ack function.")
 
 (defvar ack-mode-type-map
   '(((c++-mode) . "cpp")
@@ -54,8 +50,11 @@ in the --type argument to the ack command")
     ((xml-mode nxml-mode) . "xml")
     ((java-mode) . "java")
     ((lisp-mode) . "lisp")
-    ((perl-mode cperl-mode) . "perl"))
+    ((perl-mode cperl-mode yaml-mode) . "perl"))
   "alist describing how to fill in the '--type=' argument to ack")
+
+(defvar ack-command "ack --nocolor --nogroup "
+  "The command to be run by the ack function.")
 
 (defun ack-find-type-for-mode ()
   (catch 'found
@@ -67,22 +66,29 @@ in the --type argument to the ack command")
   (let ((type (ack-find-type-for-mode)))
     (concat ack-command
             (when (and ack-guess-type type)
-              (concat " --type=" type)) " -- ")))
+              (concat "--type=" type)) " ")))
 
 (define-compilation-mode ack-mode "Ack"
   "Ack compilation mode."
-  (set (make-local-variable 'compilation-disable-input) t)
-  (set (make-local-variable 'compilation-error-face)
-       grep-hit-face))
+  nil)
 
 ;;;###autoload
-(defun ack (command-args)
-  (interactive
-   (list (read-from-minibuffer "Run ack (like this): "
-                               (ack-build-command)
-                               nil
-                               nil
-                               'ack-history)))
-   (compilation-start command-args 'ack-mode))
+(defvar ack-history nil)
+(defvar ack-host-defaults-alist nil)
+(defun ack ()
+  "Like grep, but using ack-command as the default"
+  (interactive)
+  ; Make sure grep has been initialized
+  (if (>= emacs-major-version 22)
+      (require 'grep)
+    (require 'compile))
+  ; Close STDIN to keep ack from going into filter mode
+  (let ((null-device (format "< %s" null-device))
+        (grep-command ack-command)
+        (grep-history ack-history)
+        (grep-host-defaults-alist ack-host-defaults-alist))
+    (call-interactively 'grep)
+    (setq ack-history             grep-history
+          ack-host-defaults-alist grep-host-defaults-alist)))
 
 (provide 'ack)

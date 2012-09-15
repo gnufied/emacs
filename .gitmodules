@@ -1,6 +1,3 @@
-[submodule "org-mode"]
-	path = org-mode
-	url = git://repo.or.cz/org-mode.git
 [submodule "sass-mode"]
 	path = sass-mode
 	url = git://github.com/nex3/sass-mode.git
@@ -19,3 +16,9 @@
 [submodule "rules-editing-mode"]
 	path = rules-editing-mode
 	url = git://github.com/pdorrell/rules-editing-mode.git
+[submodule "emacs-slim"]
+	path = emacs-slim
+	url = git://github.com/minad/emacs-slim.git
+[submodule "org-mode"]
+	path = org-mode
+	url = git://orgmode.org/org-mode.git

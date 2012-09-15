@@ -6,6 +6,13 @@
 
 (add-to-list 'default-frame-alist '(width . 175))
 
+;; Setting rbenv path
+(setenv "PATH"
+        (concat (getenv "PATH")
+                ":/usr/local/bin:/Users/gnufied/.rbenv/shims"))
+
+(setq system-uses-terminfo nil)
+
 (prefer-coding-system 'utf-8)
 (windmove-default-keybindings) 
 
@@ -37,7 +44,6 @@
 (setq x-select-enable-clipboard t)
 
 (setq x-select-enable-clipboard t)	; as above
-(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
 (global-set-key [f2] 'comment-region)
 (global-set-key [f3] 'uncomment-region)
@@ -135,6 +141,14 @@
    (format "%s -f %s/TAGS -e -R %s" path-to-ctags dir-name dir-name))
   )
 
+(defun color-region ()
+  "color the region"
+  (interactive)
+  (toggle-read-only)
+  (ansi-color-apply-on-region (point-min) (point-max))
+  (toggle-read-only))
+
+
 (global-set-key "\C-ct" 'visit-tags-table)
 (global-set-key "\C-cd" 'create-tags)
 
@@ -143,6 +157,7 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;;(global-hl-line-mode t)
 
 (defun recompile-init ()
   "Byte-compile all your dotfiles again."

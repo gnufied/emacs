@@ -8,12 +8,15 @@
 	  (lambda ()
 	    (yas/minor-mode-on)
 	    ))
+
 (add-to-list 'ac-modes 'scala-mode)
 (add-to-list 'ac-modes 'html-mode)
 (add-to-list 'ac-modes 'haml-mode)
 (add-to-list 'ac-modes 'coffee-mode)
 (add-to-list 'ac-modes 'sass-mode)
 (add-to-list 'ac-modes 'tpl-mode)
+(add-to-list 'ac-modes 'rhtml-mode)
+
 
 
 
