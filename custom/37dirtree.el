@@ -1,1 +1,6 @@
-(autoload 'dirtree "dirtree" "Add directory to tree view" t)
+(require 'dirtree)
+
+(global-set-key "\C-xl" 'dirtree-show)
+
+
+

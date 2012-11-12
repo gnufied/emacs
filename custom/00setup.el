@@ -58,7 +58,7 @@
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
-(global-set-key "\C-cr" 'revert-buffer)
+(global-set-key "\C-xy" 'revert-buffer)
 
 (setq backup-inhibited t)
 ;;disable auto save
@@ -156,6 +156,9 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+
+
+;;(global-whitespace-mode t)
 
 ;;(global-hl-line-mode t)
 

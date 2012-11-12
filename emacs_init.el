@@ -1,6 +1,6 @@
 (add-to-list 'load-path "~/new_emacs")
 (add-to-list 'load-path "~/new_emacs/assorted")
-(add-to-list 'load-path	"~/new_emacs/custom")
+(add-to-list 'load-path "~/new_emacs/custom")
 (add-to-list 'load-path "~/new_emacs/org-mode/lisp")
 (add-to-list 'load-path "~/new_emacs/ruby-mode")
 (add-to-list 'load-path "~/new_emacs/rhtml")
@@ -74,6 +74,8 @@
 (load "32ace_jump.el")
 (load "36xml.el")
 (load "37dirtree.el")
+(load "38rubytools.el")
+
 (load "my-drools.el")
 
 (require 'slim-mode)
